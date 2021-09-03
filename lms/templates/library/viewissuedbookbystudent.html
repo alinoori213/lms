@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h3 Book Issued To You !</h3>
+
+<div class="row">
+
+  <div >
+    {% if li1%}
+    <table >
+  <thead>
+  <tr>
+  <th>Name</th>
+  <th>Enrollment</th>
+  <th>Branch</th>
+    <th>Book Name</th>
+      <th>Book Author</th>
+  </tr>
+  </thead>
+  <tfoot>
+  <tr>
+  <td colspan="5">
+  <div class="links"></div>
+  </td>
+  </tr>
+  </tfoot>
+  <tbody>
+    {% for t in li1 %}
+<tr>
+  <td>  {{t.0}}</td>
+  <td>  {{t.1}}</td>
+  <td>  {{t.2}}</td>
+  <td>  {{t.3}}</td>
+  <td>  {{t.4}}</td>
+</tr>
+
+    {% endfor %}
+  </tbody>
+  </table>
+
+</div>
+
+<div >
+
+      <table >
+    <thead>
+    <tr>
+    <th>Issue Date</th>
+    <th>Expiry Date</th>
+    <th>Fine</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+    <td colspan="5">
+    <div ></div>
+    </td>
+    </tr>
+    </tfoot>
+    <tbody>
+      {% for t in li2 %}
+<tr>
+  <td>  {{t.0}}</td>
+  <td>  {{t.1}}</td>
+  <td>  {{t.2}}</td>
+</tr>
+
+
+
+
+      {% endfor %}
+    </tbody>
+    </table>
+    {%else%}
+    <h1> No book Issued to you</h1>
+    {%endif%}
+
+</div></div>
+
+
+
+
+</body>
+</html>

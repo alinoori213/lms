@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if error %}
+    <p>something is wrong</p>
+{% endif %}
+ <form action="" method="post">
+    {% csrf_token %}
+{#     {% for type in form.types %}#}
+{#         {{ type.types }}#}
+{##}
+{#     {% endfor %}#}
+     {{ form.types }}
+     {{ form.phone}}
+     {{ form.password}}
+
+{#        <select>#}
+{#            #}
+{#        </select>#}
+{#        <input type="text" name="username">#}
+{#        <input type="password" name="password">#}
+        <input type="submit" value="login">
+    </form>
+
+</body>
+</html>

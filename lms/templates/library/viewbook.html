@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <br>
+    <br>
+    <h3 class="p-3 mb-2 bg-primary text-white" style = 'font-size: 50px;text-align:center;'>Available Book in Library !</h3>
+{% if books%}
+<table class="redTable">
+<thead>
+<tr>
+<th>Book Name</th>
+<th>ISBN</th>
+<th>Author</th>
+<th>Category</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="4" rowspan="4">
+<div class="links"></div>
+</td>
+</tr>
+</tfoot>
+<tbody>
+  {% for book in books %}
+    <tr>
+      <td>{{book.name}}</td>
+      <td>{{book.isbn}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.category}}</td>
+    </tr>
+  {% endfor %}
+</tbody>
+</table>
+{%else%}
+<h1>Have 0 book</h1>
+{%endif%}
+<a href="{% url 'library:issuebook' %} ">issue book</a>
+
+
+
+
+
+</body>
+</html>

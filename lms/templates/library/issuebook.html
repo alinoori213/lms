@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <br>
+    <br>
+<h3 >ISSUE BOOK TO STUDENT !</h3>
+    <div >
+        <form  method="post" >
+
+    			<center><h2>ISSUE BOOK TO STUDENT</h2></center>
+
+{% csrf_token %}
+
+            {% for field in form %}
+            <div class="form-group">
+              <label >{{ field.label_tag }}</label>
+              <div >
+              {{ field }}
+               </div>
+            </div>
+            {% endfor %}
+
+
+    		<div >
+    			<div >
+            <button type="submit" class="btn btn-primary btn-lg">ISSUE</button>
+    			</div>
+    		</div>
+        </form>
+    	<div class="text-center">View Issued Book to Student  <a href="{% url 'library:viewissuedbook' %}">Click here</a></div>
+    </div>
+
+
+</body>
+</html>

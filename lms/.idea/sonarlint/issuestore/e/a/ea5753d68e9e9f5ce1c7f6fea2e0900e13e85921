@@ -1,0 +1,9 @@
+
+dpython:S2208"GImport only needed names or import the module and then use its members.(ÅÙï„úÿÿÿÿ
+dpython:S2208"GImport only needed names or import the module and then use its members.(½Ãêùÿÿÿÿÿ
+Hpython:S1481#"+Remove the unused local variable "issdate".(¸¹´îúÿÿÿÿ
+Epython:S1481)"(Remove the unused local variable "fine".(ù›¨«úÿÿÿÿ
+Epython:S1481,"(Remove the unused local variable "fine".(¶ÇÔ®ûÿÿÿÿ
+Bpython:S14811"%Remove the unused local variable "l".(ÑÖß øÿÿÿÿ
+Cpython:S1481$"+Remove the unused local variable "expdate".(ëÀÍ¶
+;python:S125<"Remove this commented out code.(²ñç¤ÿÿÿÿÿ
